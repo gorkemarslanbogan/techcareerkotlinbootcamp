@@ -68,6 +68,7 @@ class GorkemArslanboganOdev2 {
             }
             }
         return "Toplam Tutar : $toplamTutar TL"
+
     }
 
 }
