@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.deneme">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/details_image"
+            android:layout_width="match_parent"
+            android:layout_height="292dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/details_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="Print It Dudak Kalemi 104 Caramel B104 Print It Dudak Kalemi 104 Caramel B104"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/details_price"
+                android:layout_width="119dp"
+                android:layout_height="49dp"
+                android:padding="4dp"
+                android:text="200.00 TL"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="269dp"
+                android:layout_height="64dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/details_azalt"
+                    android:layout_width="37dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="-"
+                    app:backgroundTint="#6A6A6A"
+                    app:iconTint="#818181" />
+
+                <TextView
+                    android:id="@+id/details_stock"
+                    android:layout_width="66dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="4dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/details_arrtır"
+                    android:layout_width="38dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="+"
+                    app:backgroundTint="#6A6A6A"
+                    app:iconTint="#818181" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/details_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:padding="4dp"
+            android:text="Print It dudak kalemi hassas ve yumuşak ucu sayesinde dudak çizgisi boyunca kayar, ruju çerveleyip kontür oluşturur. • Yoğun renkleri uzun süre kalıcıdır. • Dudaklarınla karşı konulmaz bir iz bırak.."
+            android:textAlignment="viewStart"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/details_add_card"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="8dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
